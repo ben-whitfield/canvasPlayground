@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animations</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen"/>
 </head>
 <body>
     <h1>Canvas Playground</h1>
-    <div id='target-div'>
-        <canvas id='target-canvas' width="160" height="160">
-          <p>HTML 5 not supported.</p>
-        </canvas>
-        <canvas id='tmp-canvas' width="160" height="160" style="display:none;"></canvas>
-      </div>
+
+    <h3>Rectangles</h3>
+    <canvas id='target-canvas-rectangles' width="500" height="500">
+      <p>HTML 5 not supported.</p>
+    </canvas>
+    
+
+    <h3>Circles</h3>
+    <canvas id='target-canvas-circles' width="500" height="500">
+      <p>HTML 5 not supported.</p>
+    </canvas>
+    
+
+    <script src="scripts/rectangles.js"></script>
+    <script src="scripts/circles.js"></script>
 </body>
 </html>
