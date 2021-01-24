@@ -67,6 +67,13 @@ function go(ctx, canvas) {
   drawCircle(ctx, params)  
 }
 
+function fadeOut(ctx) {
+    ctx.fillStyle = "rgba(255,255,255,0.1)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    setTimeout(fadeOut,200);
+}
+
 const canvas = getCanvas()
 const ctx = getContext(canvas)
-setInterval(() => go(ctx, canvas), 50);
+setInterval(() => go(ctx, canvas), 100);
+setInterval(() => fadeOut(ctx), 200);
