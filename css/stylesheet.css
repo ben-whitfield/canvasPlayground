@@ -1,9 +1,14 @@
 html {
   font-size: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 20px;
   background-color: #eee;
 }
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 h1 {
   font-size: 3rem;
   margin-top: 20px;
@@ -13,14 +18,7 @@ h3 {
   margin-top:15px;
 }
 
-.container {
-  width: 100%;
-  height: 100vh;
-}
-
-#target-canvas {
-  margin-top:20px;
-  border: 2px solid red;
-  background-color: #fff;
+canvas {
+  background: linear-gradient(45deg, #0d1011 0% 20%, #163486);
 }
 
