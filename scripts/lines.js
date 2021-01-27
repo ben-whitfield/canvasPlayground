@@ -23,7 +23,6 @@ window.addEventListener('mousemove', function (e) {
   mouse.y = event.y;
 });
 
-
 class Line {
   constructor(x, y, offset) {
     this.x = x;
@@ -80,24 +79,6 @@ for (let i = 0; i < 100; i++) {
     )
   );
 };
-
-// class Shape {
-//   constructor(x, y) {
-//     this.x = x;
-//     this.y = y;
-//     this.initialX = x;
-//     this.initialY = y;
-//   };  
-  
-//   draw = () => {
-//     // this is where we control the shape's appearance
-//   };  
-  
-//   update = () => {
-//     // this is where we control movement and interactivity
-//     this.draw();
-//   };
-// };
 
 function animate() {
   requestAnimationFrame(animate);
